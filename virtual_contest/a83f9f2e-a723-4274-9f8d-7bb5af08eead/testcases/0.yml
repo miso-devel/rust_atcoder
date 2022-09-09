@@ -1,0 +1,20 @@
+---
+type: Batch
+timelimit: 2s
+match: Exact
+
+cases:
+  - in: |
+      takahashi
+    out: |
+      tak
+  - in: |
+      naohiro
+    out: |
+      nao
+
+extend:
+  - type: Text
+    path: "./0"
+    in: /in/*.txt
+    out: /out/*.txt

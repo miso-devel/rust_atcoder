@@ -1,10 +1,19 @@
-workspace = {exclude = [],members = ["virtual_contest/a83f9f2e-a723-4274-9f8d-7bb5af08eead"]}
 [package]
-name = "rust_atcoder"
+name = "a83f9f2e-a723-4274-9f8d-7bb5af08eead"
 version = "0.1.0"
-edition = "2021"
+edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[package.metadata.cargo-compete.bin]
+a83f9f2e-a723-4274-9f8d-7bb5af08eead-0 = { alias = "0", problem = "https://atcoder.jp/contests/tokiomarine2020/tasks/tokiomarine2020_a" }
+a83f9f2e-a723-4274-9f8d-7bb5af08eead-1 = { alias = "1", problem = "https://atcoder.jp/contests/abc247/tasks/abc247_a" }
+
+[[bin]]
+name = "a83f9f2e-a723-4274-9f8d-7bb5af08eead-0"
+path = "src/bin/0.rs"
+
+[[bin]]
+name = "a83f9f2e-a723-4274-9f8d-7bb5af08eead-1"
+path = "src/bin/1.rs"
 
 [dependencies]
 num = "=0.2.1"
@@ -46,3 +55,5 @@ text_io = "=0.1.8"
 whiteread = "=0.5.0"
 rustc-hash = "=1.1.0"
 smallvec = "=1.2.0"
+
+[dev-dependencies]

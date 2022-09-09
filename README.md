@@ -3,6 +3,7 @@
 ## atcoder contest の際
 
 - 新しいコンテストの作成
+- contests 配下で実行
 
 ```
 cargo compete new
@@ -24,4 +25,32 @@ cargo compete test
 
 ```
 cargo compete submit
+```
+
+## AtCoderProblems するとき
+
+- やっぱコンテストやる時と同じで
+
+- problems 配下で実行
+
+```
+cargo new --bin 作りたいフォルダ名
+```
+
+```
+cargo member include 作ったフォルダ名
+```
+
+- この後 src 配下に bin ディレクトリを入れる（main.rs も移動させてもよし）
+
+## virtual contest する時
+
+<!-- https://github.com/qryxip/cargo-compete/pull/166 -->
+
+```
+cargo compete new 'contestID'
+```
+
+```
+cargo member include 作られたフォルダ名
 ```
