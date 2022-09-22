@@ -8,6 +8,6 @@ fn main() {
     if n == 1 || n >= 5 {
         println!("Yes")
     } else {
-        println!("No")
+        println!("No");
     }
 }
