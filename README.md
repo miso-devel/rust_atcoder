@@ -16,6 +16,7 @@ cargo member include
 ```
 
 - テストケースを試す
+- cargo build しないとできなかった
 
 ```
 cargo compete test

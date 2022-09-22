@@ -8,6 +8,6 @@ fn main() {
     }
     let array: [i32; 3];
     array = [p + q, p + r, q + r];
-    println!("{}", array[0]);
+    print!("{}", array[0]);
     println!("{}", array.iter().min().unwrap())
 }
