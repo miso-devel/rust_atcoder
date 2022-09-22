@@ -6,24 +6,19 @@ match: Lines
 cases:
   - name: sample1
     in: |
-      6 2 3 3
+      16
     out: |
-      1
+      73
   - name: sample2
     in: |
-      0 0 0 1
+      238
     out: |
-      0
+      13870
   - name: sample3
     in: |
-      998244353 -10 -20 30
+      999999999999999999
     out: |
-      998244363
-  - name: sample4
-    in: |
-      -555555555555555555 -1000000000000000000 1000000 1000000000000
-    out: |
-      444445
+      762062362
 
 extend:
   - type: Text

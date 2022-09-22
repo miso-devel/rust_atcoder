@@ -1,48 +1,48 @@
 [package]
-name = "abc255"
+name = "abc238"
 version = "0.1.0"
 edition = "2018"
 
 [package.metadata.cargo-compete.bin]
-abc255-a = { alias = "a", problem = "https://atcoder.jp/contests/abc255/tasks/abc255_a" }
-abc255-b = { alias = "b", problem = "https://atcoder.jp/contests/abc255/tasks/abc255_b" }
-abc255-c = { alias = "c", problem = "https://atcoder.jp/contests/abc255/tasks/abc255_c" }
-abc255-d = { alias = "d", problem = "https://atcoder.jp/contests/abc255/tasks/abc255_d" }
-abc255-e = { alias = "e", problem = "https://atcoder.jp/contests/abc255/tasks/abc255_e" }
-abc255-ex = { alias = "ex", problem = "https://atcoder.jp/contests/abc255/tasks/abc255_h" }
-abc255-f = { alias = "f", problem = "https://atcoder.jp/contests/abc255/tasks/abc255_f" }
-abc255-g = { alias = "g", problem = "https://atcoder.jp/contests/abc255/tasks/abc255_g" }
+abc238-a = { alias = "a", problem = "https://atcoder.jp/contests/abc238/tasks/abc238_a" }
+abc238-b = { alias = "b", problem = "https://atcoder.jp/contests/abc238/tasks/abc238_b" }
+abc238-c = { alias = "c", problem = "https://atcoder.jp/contests/abc238/tasks/abc238_c" }
+abc238-d = { alias = "d", problem = "https://atcoder.jp/contests/abc238/tasks/abc238_d" }
+abc238-e = { alias = "e", problem = "https://atcoder.jp/contests/abc238/tasks/abc238_e" }
+abc238-ex = { alias = "ex", problem = "https://atcoder.jp/contests/abc238/tasks/abc238_h" }
+abc238-f = { alias = "f", problem = "https://atcoder.jp/contests/abc238/tasks/abc238_f" }
+abc238-g = { alias = "g", problem = "https://atcoder.jp/contests/abc238/tasks/abc238_g" }
 
 [[bin]]
-name = "abc255-a"
+name = "abc238-a"
 path = "src/bin/a.rs"
 
 [[bin]]
-name = "abc255-b"
+name = "abc238-b"
 path = "src/bin/b.rs"
 
 [[bin]]
-name = "abc255-c"
+name = "abc238-c"
 path = "src/bin/c.rs"
 
 [[bin]]
-name = "abc255-d"
+name = "abc238-d"
 path = "src/bin/d.rs"
 
 [[bin]]
-name = "abc255-e"
+name = "abc238-e"
 path = "src/bin/e.rs"
 
 [[bin]]
-name = "abc255-ex"
+name = "abc238-ex"
 path = "src/bin/ex.rs"
 
 [[bin]]
-name = "abc255-f"
+name = "abc238-f"
 path = "src/bin/f.rs"
 
 [[bin]]
-name = "abc255-g"
+name = "abc238-g"
 path = "src/bin/g.rs"
 
 [dependencies]
