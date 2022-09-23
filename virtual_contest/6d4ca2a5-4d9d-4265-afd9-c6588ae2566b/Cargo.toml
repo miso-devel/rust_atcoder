@@ -1,0 +1,110 @@
+[package]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b"
+version = "0.1.0"
+edition = "2018"
+
+[package.metadata.cargo-compete.bin]
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-0 = { alias = "0", problem = "https://atcoder.jp/contests/abc180/tasks/abc180_a" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-1 = { alias = "1", problem = "https://atcoder.jp/contests/abc178/tasks/abc178_a" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-10 = { alias = "10", problem = "https://atcoder.jp/contests/abc266/tasks/abc266_a" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-11 = { alias = "11", problem = "https://atcoder.jp/contests/abc264/tasks/abc264_a" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-12 = { alias = "12", problem = "https://atcoder.jp/contests/abc218/tasks/abc218_a" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-13 = { alias = "13", problem = "https://atcoder.jp/contests/abc179/tasks/abc179_a" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-14 = { alias = "14", problem = "https://atcoder.jp/contests/abc214/tasks/abc214_b" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-15 = { alias = "15", problem = "https://atcoder.jp/contests/abc222/tasks/abc222_b" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-16 = { alias = "16", problem = "https://atcoder.jp/contests/abc204/tasks/abc204_b" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-17 = { alias = "17", problem = "https://atcoder.jp/contests/abc052/tasks/abc052_a" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-18 = { alias = "18", problem = "https://atcoder.jp/contests/abc151/tasks/abc151_a" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-19 = { alias = "19", problem = "https://atcoder.jp/contests/abc205/tasks/abc205_a" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-2 = { alias = "2", problem = "https://atcoder.jp/contests/abc176/tasks/abc176_a" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-3 = { alias = "3", problem = "https://atcoder.jp/contests/abc174/tasks/abc174_a" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-4 = { alias = "4", problem = "https://atcoder.jp/contests/abc172/tasks/abc172_a" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-5 = { alias = "5", problem = "https://atcoder.jp/contests/abc170/tasks/abc170_a" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-6 = { alias = "6", problem = "https://atcoder.jp/contests/abc053/tasks/abc053_a" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-7 = { alias = "7", problem = "https://atcoder.jp/contests/abc101/tasks/abc101_a" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-8 = { alias = "8", problem = "https://atcoder.jp/contests/abc207/tasks/abc207_a" }
+contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-9 = { alias = "9", problem = "https://atcoder.jp/contests/abc201/tasks/abc201_a" }
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-0"
+path = "src/bin/0.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-1"
+path = "src/bin/1.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-10"
+path = "src/bin/10.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-11"
+path = "src/bin/11.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-12"
+path = "src/bin/12.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-13"
+path = "src/bin/13.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-14"
+path = "src/bin/14.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-15"
+path = "src/bin/15.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-16"
+path = "src/bin/16.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-17"
+path = "src/bin/17.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-18"
+path = "src/bin/18.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-19"
+path = "src/bin/19.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-2"
+path = "src/bin/2.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-3"
+path = "src/bin/3.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-4"
+path = "src/bin/4.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-5"
+path = "src/bin/5.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-6"
+path = "src/bin/6.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-7"
+path = "src/bin/7.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-8"
+path = "src/bin/8.rs"
+
+[[bin]]
+name = "contest6d4ca2a5-4d9d-4265-afd9-c6588ae2566b-9"
+path = "src/bin/9.rs"
+
+[dependencies]
+
+[dev-dependencies]

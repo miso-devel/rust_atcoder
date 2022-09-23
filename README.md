@@ -55,3 +55,9 @@ cargo compete new 'contestID'
 ```
 cargo member include 作られたフォルダ名
 ```
+
+## 問題開く時
+
+```
+cargo compete open
+```

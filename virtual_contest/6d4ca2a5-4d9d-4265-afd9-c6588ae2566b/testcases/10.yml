@@ -1,0 +1,20 @@
+---
+type: Batch
+timelimit: 2s
+match: Exact
+
+cases:
+  - in: |
+      atcoder
+    out: |
+      o
+  - in: |
+      a
+    out: |
+      a
+
+extend:
+  - type: Text
+    path: "./10"
+    in: /in/*.txt
+    out: /out/*.txt
