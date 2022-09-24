@@ -1,0 +1,24 @@
+---
+type: Batch
+timelimit: 2s
+match: Exact
+
+cases:
+  - in: |
+      apple
+    out: |
+      apples
+  - in: |
+      bus
+    out: |
+      buses
+  - in: |
+      box
+    out: |
+      boxs
+
+extend:
+  - type: Text
+    path: "./13"
+    in: /in/*.txt
+    out: /out/*.txt

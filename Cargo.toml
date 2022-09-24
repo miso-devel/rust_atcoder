@@ -1,4 +1,4 @@
-workspace = {exclude = [],members = ["contests/abc129", "contests/abc238", "contests/typical90", "contests/abs", "virtual_contest/6d4ca2a5-4d9d-4265-afd9-c6588ae2566b"]}
+workspace = {exclude = [],members = ["contests/abc129", "contests/abc238", "contests/typical90", "contests/abs", "virtual_contests/6d4ca2a5-4d9d-4265-afd9-c6588ae2566b"]}
 [package]
 name = "rust_atcoder"
 version = "0.1.0"
