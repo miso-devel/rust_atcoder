@@ -1,0 +1,27 @@
+---
+type: Batch
+timelimit: 2s
+match: Exact
+
+cases:
+  - in: |
+      6
+      G W Y P Y W
+    out: |
+      Four
+  - in: |
+      9
+      G W W G P W P G G
+    out: |
+      Three
+  - in: |
+      8
+      P Y W G Y W Y Y
+    out: |
+      Four
+
+extend:
+  - type: Text
+    path: "./11"
+    in: /in/*.txt
+    out: /out/*.txt

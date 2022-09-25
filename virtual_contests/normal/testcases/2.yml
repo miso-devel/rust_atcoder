@@ -1,0 +1,33 @@
+---
+type: Batch
+timelimit: 2s
+match: Exact
+
+cases:
+  - in: |
+      mari
+      to
+      zzo
+      1321
+    out: |
+      marizzotomari
+  - in: |
+      abra
+      cad
+      abra
+      123
+    out: |
+      abracadabra
+  - in: |
+      a
+      b
+      c
+      1
+    out: |
+      a
+
+extend:
+  - type: Text
+    path: "./2"
+    in: /in/*.txt
+    out: /out/*.txt

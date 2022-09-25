@@ -1,0 +1,28 @@
+---
+type: Batch
+timelimit: 2s
+match: Exact
+
+cases:
+  - in: |
+      2 3
+      abc
+      arc
+    out: |
+      #####
+      #abc#
+      #arc#
+      #####
+  - in: |
+      1 1
+      z
+    out: |
+      ###
+      #z#
+      ###
+
+extend:
+  - type: Text
+    path: "./8"
+    in: /in/*.txt
+    out: /out/*.txt

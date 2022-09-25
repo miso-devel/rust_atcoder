@@ -1,0 +1,26 @@
+---
+type: Batch
+timelimit: 2s
+match: Exact
+
+cases:
+  - in: |
+      4
+      -WWW
+      L-DD
+      LD-W
+      LDW-
+    out: |
+      incorrect
+  - in: |
+      2
+      -D
+      D-
+    out: |
+      correct
+
+extend:
+  - type: Text
+    path: "./4"
+    in: /in/*.txt
+    out: /out/*.txt

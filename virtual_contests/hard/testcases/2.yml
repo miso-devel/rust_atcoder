@@ -1,0 +1,27 @@
+---
+type: Batch
+timelimit: 2s
+match: Exact
+
+cases:
+  - in: |
+      6
+      aabbca
+    out: |
+      2
+  - in: |
+      10
+      aaaaaaaaaa
+    out: |
+      1
+  - in: |
+      45
+      tgxgdqkyjzhyputjjtllptdfxocrylqfqjynmfbfucbir
+    out: |
+      9
+
+extend:
+  - type: Text
+    path: "./2"
+    in: /in/*.txt
+    out: /out/*.txt

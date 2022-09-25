@@ -1,0 +1,27 @@
+---
+type: Batch
+timelimit: 2s
+match: Exact
+
+cases:
+  - in: |
+      1214
+      4
+    out: |
+      2
+  - in: |
+      3
+      157
+    out: |
+      3
+  - in: |
+      299792458
+      9460730472580800
+    out: |
+      2
+
+extend:
+  - type: Text
+    path: "./10"
+    in: /in/*.txt
+    out: /out/*.txt
