@@ -1,0 +1,46 @@
+---
+type: Batch
+timelimit: 2s
+match: Exact
+
+cases:
+  - in: |
+      2
+      2
+      1
+    out: |
+      5
+  - in: |
+      2
+      32
+      3
+    out: |
+      62
+  - in: |
+      4
+      12
+      3
+      7
+      34
+    out: |
+      12039
+  - in: |
+      10
+      1234
+      2
+      857
+      3858
+      1
+      5000
+      32
+      4
+      1
+      857
+    out: |
+      969347336
+
+extend:
+  - type: Text
+    path: "./9"
+    in: /in/*.txt
+    out: /out/*.txt
