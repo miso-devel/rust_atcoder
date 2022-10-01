@@ -8,6 +8,8 @@ fn main() {
         mut z:i32
     }
     // 障害物地点が０以下にあるなら全てに−１をかけて正の方向に持っていく
+    // bit orわからないとできない問題
+    // https://atcoder.jp/contests/abc270/editorial/4877
     if y < 0 {
         x *= -1;
         y *= -1;
