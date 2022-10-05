@@ -3,5 +3,21 @@ use proconio::{fastout, input};
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        n:i32,
+        a:[i32;n]
+    }
+    let mut ans = 1000000;
+    for v in -100..=100 {
+        let mut res = 0;
+        for i in a.iter() {
+            res += (i - v).pow(2);
+            // println!("i:{} - v:{} .pow:{}", i, v, res);
+        }
+        // println!("{}", res);
+        if res < ans {
+            ans = res;
+        }
+    }
+    println!("{}", ans)
 }
