@@ -8,12 +8,15 @@ fn main() {
         a:[i32;n],
         l:[(usize,usize);q]
     }
-    // 累積和問題
+    // 累積和の前計算
+    let mut custom_array: Vec<i32> = vec![0];
+    // custom_arrayに総和をpushしていく
+    for i in 1..=n {
+        custom_array.push(custom_array[(i - 1) as usize] + a[(i - 1) as usize])
+    }
+    // q回で計算終わり
+    // ..endの値から..startの値を引けば総和が求められる
     for (start, end) in l {
-        // 配列の中にある特定の区間を切り出したものをslicedに格納
-        let sliced = a.iter().as_slice().get((start - 1)..=(end - 1)).unwrap();
-        // 合計を求める
-        let sum: i32 = sliced.iter().sum();
-        println!("{:?}", sum);
+        println!("{}", custom_array[end] - custom_array[start - 1])
     }
 }

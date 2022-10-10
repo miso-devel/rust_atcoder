@@ -1,10 +1,39 @@
-workspace = {exclude = [],members = ["contests/abc129", "contests/abc238", "contests/abs", "contests/abc270", "virtual_contests/easy", "virtual_contests/normal", "virtual_contests/hard", "virtual_contests/expert", "virtual_contests/doer0929", "contests/abc271", "contests/tessoku-book", "contests/arc150", "contests/abc267"]}
 [package]
-name = "rust_atcoder"
+name = "arc150"
 version = "0.1.0"
-edition = "2021"
+edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[package.metadata.cargo-compete.bin]
+arc150-a = { alias = "a", problem = "https://atcoder.jp/contests/arc150/tasks/arc150_a" }
+arc150-b = { alias = "b", problem = "https://atcoder.jp/contests/arc150/tasks/arc150_b" }
+arc150-c = { alias = "c", problem = "https://atcoder.jp/contests/arc150/tasks/arc150_c" }
+arc150-d = { alias = "d", problem = "https://atcoder.jp/contests/arc150/tasks/arc150_d" }
+arc150-e = { alias = "e", problem = "https://atcoder.jp/contests/arc150/tasks/arc150_e" }
+arc150-f = { alias = "f", problem = "https://atcoder.jp/contests/arc150/tasks/arc150_f" }
+
+[[bin]]
+name = "arc150-a"
+path = "src/bin/a.rs"
+
+[[bin]]
+name = "arc150-b"
+path = "src/bin/b.rs"
+
+[[bin]]
+name = "arc150-c"
+path = "src/bin/c.rs"
+
+[[bin]]
+name = "arc150-d"
+path = "src/bin/d.rs"
+
+[[bin]]
+name = "arc150-e"
+path = "src/bin/e.rs"
+
+[[bin]]
+name = "arc150-f"
+path = "src/bin/f.rs"
 
 [dependencies]
 num = "=0.2.1"
@@ -46,3 +75,5 @@ text_io = "=0.1.8"
 whiteread = "=0.5.0"
 rustc-hash = "=1.1.0"
 smallvec = "=1.2.0"
+
+[dev-dependencies]
