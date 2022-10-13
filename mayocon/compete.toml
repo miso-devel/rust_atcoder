@@ -1,12 +1,26 @@
-workspace = {exclude = [],members = ["contests/abc129", "contests/abc238", "contests/abs", "contests/abc270", "virtual_contests/easy", "virtual_contests/normal", "virtual_contests/hard", "virtual_contests/expert", "virtual_contests/doer0929", "contests/abc271", "contests/tessoku-book", "contests/arc150", "contests/abc267", "mayocon/2022-1012"]}
-[package]
-name = "rust_atcoder"
-version = "0.1.0"
-edition = "2021"
+test-suite = "{{ manifest_dir }}/testcases/{{ bin_alias }}.yml"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[template]
+src = '''
+use proconio::{fastout, input};
 
-[dependencies]
+#[fastout]
+fn main() {
+    input! {}
+}
+'''
+
+[template.new]
+# `edition` for `Cargo.toml`.
+edition = "2018"
+# `profile` for `Cargo.toml`.
+#
+# By setting this, you can run tests with `opt-level=3` while enabling `debug-assertions` and `overflow-checks`.
+#profile = '''
+#[dev]
+#opt-level = 3
+#'''
+dependencies = '''
 num = "=0.2.1"
 num-bigint = "=0.2.6"
 num-complex = "=0.2.4"
@@ -46,3 +60,16 @@ text_io = "=0.1.8"
 whiteread = "=0.5.0"
 rustc-hash = "=1.1.0"
 smallvec = "=1.2.0"
+'''
+dev-dependencies = '''
+#atcoder-202004-lock = { git = "https://github.com/qryxip/atcoder-202004-lock" }
+'''
+
+[template.new.copy-files]
+
+[new]
+kind = "oj-api"
+url = "https://kenkoooo.com/atcoder/#/contest/show/{{ id }}"
+path = "./{{ contest }}"
+
+[test]

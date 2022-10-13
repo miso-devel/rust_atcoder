@@ -1,0 +1,22 @@
+---
+type: Batch
+timelimit: 2s
+match: Exact
+
+cases:
+  - in: |
+      aba
+      ababaab
+    out: |
+      3
+  - in: |
+      atcoder
+      ac
+    out: |
+      -1
+
+extend:
+  - type: Text
+    path: "./6"
+    in: /in/*.txt
+    out: /out/*.txt

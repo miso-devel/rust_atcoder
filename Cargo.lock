@@ -605,6 +605,51 @@ dependencies = [
 ]
 
 [[package]]
+name = "contest99925854-1bd4-4254-abee-cc12386afd91"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio",
+ "rand",
+ "rand_chacha",
+ "rand_core",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
 name = "either"
 version = "1.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
