@@ -6,23 +6,23 @@ fn main() {
         mut n:usize,
         a:[usize;n]
     }
-    let mut ans = [0; n];
     let mut cloned = a.clone();
     cloned.sort();
     cloned.dedup();
-    println!("a:{:?}", a);
-    println!("cloned:{:?}", cloned);
     let mut count = Ok(10);
-    let mut t_count: Vec<usize> = vec![];
+    let mut t_count: Vec<usize> = vec![0; n];
     for i in a {
         count = cloned.binary_search(&i);
         if count.is_ok() {
-            t_count.push(cloned.len() - 1 - count.unwrap())
+            let ok = cloned.len() - 1 - count.unwrap();
+            t_count[ok] += 1;
         } else {
-            t_count.push(count.unwrap_err())
+            let err = count.unwrap_err();
+            t_count[err] += 0;
         }
-        println!("i:{}  count:{:?}", i, t_count);
     }
 
-    for t in t_count {}
+    for t in t_count {
+        println!("{}", t)
+    }
 }
