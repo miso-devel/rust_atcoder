@@ -1,4 +1,4 @@
-workspace = {exclude = [],members = ["contests/abc129", "contests/abc238", "contests/abs", "contests/abc270", "virtual_contests/easy", "virtual_contests/normal", "virtual_contests/hard", "virtual_contests/expert", "virtual_contests/doer0929", "contests/abc271", "contests/tessoku-book", "contests/arc150", "contests/abc267", "mayocon/2022-1012", "contests/abc150", "contests/abc182", "contests/abc273", "virtual_contests/doer20221020"]}
+workspace = {exclude = [],members = ["contests/abc129", "contests/abc238", "contests/abs", "contests/abc270", "virtual_contests/easy", "virtual_contests/normal", "virtual_contests/hard", "virtual_contests/expert", "virtual_contests/doer0929", "contests/abc271", "contests/tessoku-book", "contests/arc150", "contests/abc267", "mayocon/2022-1012", "contests/abc150", "contests/abc182", "contests/abc273", "virtual_contests/doer20221020", "contests/abc274"]}
 [package]
 name = "rust_atcoder"
 version = "0.1.0"
