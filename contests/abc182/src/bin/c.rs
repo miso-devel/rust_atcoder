@@ -1,33 +1,32 @@
 use proconio::{fastout, input};
 #[fastout]
-
-fn to_digit(num: usize) -> String {
-    format!("{:b}", num)
-}
 fn main() {
     input! {
         n:String
     }
-    let mut to_array: Vec<_> = n.split("").collect();
-    to_array.pop();
-    println!("{:?}", to_array);
-    let sam = [3, 6, 9, 5];
-    println!("{}", 1 << 7);
-    println!("{}", 1 & (1 << 2));
-    // bit全探索
-    // filterでは条件に合うものしか返さない
-    for bit in 0..(1 << sam.len()) {
-        let sample: Vec<_> = (0..sam.len()).filter(|x| (bit & (1 << x)) != 0).collect();
-        let sub_list = (0..sam.len())
+    let ary: Vec<_> = n.split("").filter(|&x| x != "").collect();
+    let mut ans: isize = n.len() as isize;
+    let mut cnt = 0;
+    for bit in 1..(1 << n.len()) {
+        let sub_list: Vec<_> = (0..n.len())
             .filter(|x| (bit & (1 << x)) != 0)
-            .map(|x| sam[x]);
-
-        println!("filter結果: {:?}", sample);
-        println!("今回の組み合わせ   bit: {} の時", bit);
-
-        sub_list.for_each(|x| {
-            println!("x: {:?}", x);
-        });
-        println!("\n")
+            .map(|x| ary[x])
+            .collect();
+        let str = sub_list
+            .iter()
+            .map(|s| s.trim())
+            .collect::<Vec<_>>()
+            .join("");
+        let num: isize = str.parse().unwrap();
+        let num_length: isize = str.len() as isize;
+        if num % 3 == 0 {
+            ans = ans.min((n.len() as isize) - num_length);
+            cnt += 1;
+        }
+    }
+    if cnt == 0 {
+        println!("-1");
+    } else {
+        println!("{}", ans);
     }
 }

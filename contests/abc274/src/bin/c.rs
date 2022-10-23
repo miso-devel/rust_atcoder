@@ -7,6 +7,5 @@ fn main() {
         a:[isize;n]
     }
     println!("{:?}", a);
-    let mut res = vec![0; (2 * n + 1) as usize];
-    for i in a {}
+    let res = vec![0; (2 * n + 1) as usize];
 }
